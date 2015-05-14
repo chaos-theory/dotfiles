@@ -1,0 +1,3 @@
+[submodule "atomantic_dotfiles"]
+	path = atomantic_dotfiles
+	url = https://github.com/atomantic/dotfiles.git
