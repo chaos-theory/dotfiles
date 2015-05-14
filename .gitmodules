@@ -1,3 +1,6 @@
 [submodule "atomantic_dotfiles"]
 	path = atomantic_dotfiles
 	url = https://github.com/atomantic/dotfiles.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
