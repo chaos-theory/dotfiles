@@ -1,0 +1,14 @@
+# Julien's Scripts
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:."
+export PATH="$PATH:$HOME/bin"
+
+# Android Dev Toolkit
+export PATH="$PATH:$HOME/Documents/Android/adt/sdk/tools"
+export PATH="$PATH:$HOME/Documents/Android/adt/sdk/platform-tools"
+# Dex2Jar
+export PATH="$PATH:$HOME/bin/dex2jar-0.0.9.15"
+# Android Backup Extractor
+export PATH="$PATH:$HOME/bin/android-backup-extractor-master"
+

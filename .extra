@@ -1,0 +1,40 @@
+# Git credentials
+# Not in the repository, to prevent people from accidentally committing under my name
+GIT_AUTHOR_NAME="Julien Kirsch"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="jkirsch@blackberry.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+git config --global url."https://".insteadOf git://
+
+# init z   https://github.com/rupa/z
+. `brew --prefix`/etc/profile.d/z.sh
+
+# npm registry for bbid modules
+alias npmbbid='npm set registry http://eid-poc001-uos001-thr.ebbid.altus.bblabs.rim.net:8080'
+
+# `cat` with beautiful colors. requires Pygments installed.
+#   sudo easy_install Pygments
+alias cc='pygmentize -O style=monokai -f console256 -g'
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
+#export ANDROID_NDK_HOME=~/Documents/Android/android-ndk-r10b
+export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r10c
+
+
+#Go
+export GOPATH=$HOME/Projects/Go
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+#Docker
+alias fdocker='sudo route -nv add -net 192.168.59 -interface vboxnet1'
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/jkirsch/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+# Enable tab completion for `t` by marking it as an alias for `todo.sh`
+if type _todo &> /dev/null && [ -f /usr/local/etc/bash_completion.d/todo-completion ]; then
+    complete -o default -o nospace -F _todo t;
+fi;
