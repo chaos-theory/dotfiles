@@ -7,3 +7,6 @@
 [submodule "mathiasbynens_dotfiles"]
 	path = mathiasbynens_dotfiles
 	url = https://github.com/mathiasbynens/dotfiles.git
+[submodule "powerline"]
+	path = powerline
+	url = https://github.com/powerline/powerline.git
